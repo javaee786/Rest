@@ -69,7 +69,7 @@ public class TopicController {
 	 *2.we get the id from @PathVariable String id, and you get the 'topic' from the post body 
 	 *and updates it by passing that to the updateTopic method.  
 	 */
-	@RequestMapping(method = RequestMethod.PUT, value = "/topics/{id}")s
+	@RequestMapping(method = RequestMethod.PUT, value = "/topics/{id}")
 	public void updateTopic(@RequestBody Topic topic, @PathVariable String id) {
 		topicService.updateTopic(id, topic);
 	}
